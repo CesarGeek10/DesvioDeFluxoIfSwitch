@@ -22,6 +22,7 @@ namespace OperacoesCondicionais
             /* 
             Para limpar a tela de comando a cada execução, utilizamos o comando Console.Clear(); Obs .: Clear -> Limpar
              */
+             
              Console.Clear();
              Console.WriteLine("Escolha uma das operações abaixo: ");
 
@@ -38,8 +39,31 @@ namespace OperacoesCondicionais
              Console.WriteLine("Digite outro numero: ");
              n2 = double.Parse(Console.ReadLine());
 
-             
+             if(operacao==1)
+             {
+                 Console.WriteLine("O resultado da soma é: "+(n1+n2));
 
+             }
+
+             else if(operacao==2)
+            {
+                Console.WriteLine("O resultador da subtração é: "+(n1-n2));
+
+            } 
+            else if(operacao==3)
+            {
+                Console.WriteLine("O resultado da Multiplicação é:" +(n1*n2));
+
+            }
+            else if(operacao==4)
+            {
+                Console.WriteLine("O resultado da divissao é " +(n1/n2));
+
+            }
+            else
+            {
+                Console.WriteLine("Operação Invalida!");
+            }
 
 
         }
